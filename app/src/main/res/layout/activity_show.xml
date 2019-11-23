@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="96dp">
+
+        <com.example.lin10.picturesharing.view.MyCircleImageView
+            android:id="@+id/aaa"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/ltt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="13dp"
+            android:text="id"
+            android:textSize="36dp" />
+
+        <com.ldoublem.thumbUplib.ThumbUpView
+            android:id="@+id/tpv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/ltt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            app:cracksColor="#33475f"
+            app:edgeColor="#9d55b8"
+            app:fillColor="#ea8010"
+            app:unlikeType="0" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1">
+
+        <com.example.lin10.picturesharing.view.MyImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="220sp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/bt_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:text="收藏" />
+
+    </RelativeLayout>
+</LinearLayout>
